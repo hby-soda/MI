@@ -1,0 +1,56 @@
+/*-------topbar-------*/
+.site-topbar {
+    position: relative;
+    z-index: 30;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    background: #333;
+}
+.site-topbar .container {
+    margin-right: auto;
+    margin-left: auto;
+}
+.topbar-nav {
+    float: left;
+    overflow: hidden;
+}
+.site-topbar .sep {
+    margin: 0 .5em;
+    color: #424242;
+}
+.topbar-cart,
+.topbar-info {
+    float: right;
+}
+.topbar-nav a:hover,
+.topbar-info a:hover
+{
+    color: #ffffff;
+}
+.topbar-cart {
+    width: 120px;
+    margin-left: 15px;
+}
+.topbar-cart i{
+    margin-right: 4px;
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: -4px;
+}
+.topbar-cart a {
+    position: relative;
+    z-index: 32;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #b0b0b0;
+    background: #424242;
+}
+.topbar-cart a:hover {
+    color: #ff6700;
+    background-color:#ffffff;
+}
+/*-------topbar-------*/

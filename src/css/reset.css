@@ -1,0 +1,149 @@
+/*reset
+------------------------------*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+th,
+td,
+figure {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+fieldset,
+img {
+  border: 0;
+}
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font: inherit;
+}
+input {
+  text-align: inherit;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+  vertical-align: top;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
+}
+body {
+  background-color: #fff;
+  font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  color: #333;
+}
+
+:focus {
+  outline: none;
+}
+:link,
+:visited {
+  text-decoration: none;
+}
+
+a {
+  color: #757575;
+  text-decoration: none;
+}
+a:active,
+a:hover,
+a:focus {
+  outline: 0;
+}
+a:hover {
+  color: #ff6700;
+}
+/*reset end*/
+
+/*-----------common css-----------*/
+
+/*盒模型*/
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*清浮动*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+  height: 0;
+  font-size: 0;
+  content: '';
+}
+/*公共宽度*/
+.commonWidth {
+    width: 1226px
+}
