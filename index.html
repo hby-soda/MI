@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="src/css/reset.css"/>
     <link rel="stylesheet" href="src/css/styles.css"/>
     <link rel="stylesheet" href="src/css/iconfont.css"/>
+    <script src="src/js/jquery.min.js"></script>
 </head>
 <body>
     <div class="site-topbar">
@@ -20,6 +21,7 @@
                 <a href="#">云服务</a>
                 <span class="sep">|</span>
                 <a href="#">小爱开放平台</a>
+                <span class="sep">|</span>
                 <a href="#">金融</a>
                 <span class="sep">|</span>
                 <a href="#">有品</a>
@@ -44,9 +46,93 @@
             </div>
         </div>
     </div>
-    <div class="site-header">头部</div>
+    <div class="site-header">
+        <div class="container commonWidth">
+            <div class="header-logo">
+                <a>
+                    <img src="src/image/logo.png"/>
+                </a>
+            </div>
+            <div class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-category">
+                        <a class="link-category">
+                            <span>全部商品分类</span>
+                        </a>
+                        <div class="site-category">
+                            <ul id="J_categoryList" class="site-category-list clearfix">
+                                <li class="category-item">
+                                </li>
+                            </ul>
+                        </div>
+                    <li></li>
+                    <li class="nav-item">
+                        <a class="link" href="#">
+                            <span class="text">小米手机</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="#">
+                            <span class="text">红米</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="#">
+                            <span class="text">电视</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="#">
+                            <span class="text">笔记本</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="#">
+                            <span class="text">盒子</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="#">
+                            <span class="text">新品</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="#">
+                            <span class="text">路由器</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="#">
+                            <span class="text">智能硬件</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="#">
+                            <span class="text">服务</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="#">
+                            <span class="text">社区</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-search">
+                <form class="search-form">
+                    <input class="search-text" type="text">
+                    <input type="submit" class="search-btn iconfont" value="&#xe65a;"/>
+                    <div class="search-hot-words">
+                        <a href="#">小米6X</a>
+                        <a href="#">红米S2</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <div class="site-body">主体</div>
     <div class="site-footer">底部</div>
     <div class="site-info">网站相关</div>
+    <script src="src/js/index.js"></script>
 </body>
 </html>
