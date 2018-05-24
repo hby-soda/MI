@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="site-topbar">
-        <div class="container commonWidth">
+        <div class="container clearfix">
             <div class="topbar-nav">
                 <a href="#">小米商城</a>
                 <span class="sep">|</span>
@@ -31,11 +31,14 @@
                 <a href="#">Select Region</a>
             </div>
             <div class="topbar-cart">
-                <a>
+                <a href="#">
                     <i class="iconfont">&#xe600;</i>
                     购物车
                     <span>（0）</span>
                 </a>
+                <div class="cart-info">
+                    <p>购物车中还没有商品，赶紧选购吧！</p>
+                </div>
             </div>
             <div class="topbar-info">
                 <a href="#">登录</a>
@@ -47,81 +50,176 @@
         </div>
     </div>
     <div class="site-header">
-        <div class="container commonWidth">
+        <div class="container clearfix">
             <div class="header-logo">
                 <a>
                     <img src="src/image/logo.png"/>
                 </a>
             </div>
-            <div class="header-nav">
-                <ul class="nav-list">
-                    <li class="nav-category">
-                        <a class="link-category">
-                            <span>全部商品分类</span>
-                        </a>
-                        <div class="site-category">
-                            <ul id="J_categoryList" class="site-category-list clearfix">
-                                <li class="category-item">
-                                </li>
-                            </ul>
-                        </div>
-                    <li></li>
-                    <li class="nav-item">
-                        <a class="link" href="#">
-                            <span class="text">小米手机</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#">
-                            <span class="text">红米</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#">
-                            <span class="text">电视</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#">
-                            <span class="text">笔记本</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#">
-                            <span class="text">盒子</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#">
-                            <span class="text">新品</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#">
-                            <span class="text">路由器</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#">
-                            <span class="text">智能硬件</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#">
-                            <span class="text">服务</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#">
-                            <span class="text">社区</span>
-                        </a>
-                    </li>
+            <ul class="header-nav">
+                <li class="nav-category">
+                    <a class="link-category">
+                        <span>全部商品分类</span>
+                    </a>
+                    <div class="site-category">
+                        <ul class="site-category-list clearfix">
+                            <li class="category-item">
+                                <a class="title" href="#">
+                                    手机 电话卡
+                                    <i class="iconfont">&#xe62b;</i>
+                                </a>
+                            </li>
+                            <li class="category-item">
+                                <a class="title" href="#">
+                                    电视 盒子
+                                    <i class="iconfont">&#xe62b;</i>
+                                </a>
+                            </li>
+                            <li class="category-item">
+                                <a class="title" href="#">
+                                    笔记本
+                                    <i class="iconfont">&#xe62b;</i>
+                                </a>
+                            </li>
+                            <li class="category-item">
+                                <a class="title" href="#">
+                                    智能 家电
+                                    <i class="iconfont">&#xe62b;</i>
+                                </a>
+                            </li>
+                            <li class="category-item">
+                                <a class="title" href="#">
+                                    健康 家居
+                                    <i class="iconfont">&#xe62b;</i>
+                                </a>
+                            </li>
+                            <li class="category-item">
+                                <a class="title" href="#">
+                                    出行 儿童
+                                    <i class="iconfont">&#xe62b;</i>
+                                </a>
+                            </li>
+                            <li class="category-item">
+                                <a class="title" href="#">
+                                    路由器 手机配件
+                                    <i class="iconfont">&#xe62b;</i>
+                                </a>
+                            </li>
+                            <li class="category-item">
+                                <a class="title" href="#">
+                                    移动电源 插线板
+                                    <i class="iconfont">&#xe62b;</i>
+                                </a>
+                            </li>
+                            <li class="category-item">
+                                <a class="title" href="#">
+                                    耳机 音响
+                                    <i class="iconfont">&#xe62b;</i>
+                                </a>
+                            </li>
+                            <li class="category-item">
+                                <a class="title" href="#">
+                                    生活 米兔
+                                    <i class="iconfont">&#xe62b;</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">
+                        <span class="text">小米手机</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">
+                        <span class="text">红米</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">
+                        <span class="text">电视</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">
+                        <span class="text">笔记本</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">
+                        <span class="text">盒子</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">
+                        <span class="text">新品</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">
+                        <span class="text">路由器</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">
+                        <span class="text">智能硬件</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">
+                        <span class="text">服务</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">
+                        <span class="text">社区</span>
+                    </a>
+                </li>
                 </ul>
-            </div>
             <div class="header-search">
                 <form class="search-form">
-                    <input class="search-text" type="text">
-                    <input type="submit" class="search-btn iconfont" value="&#xe65a;"/>
+                    <input
+                          class="search-text"
+                          type="text"
+                    />
+                    <ul class="search-hot-lists">
+                        <li class="list-item">
+                            <a href="#">小米6X<span>约有6件</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">小米MIX 2S<span>约有5件</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">黑鲨游戏手机<span>约有3件</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">红米Note 5<span>约有6件</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">红米5A<span>约有13件</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">小米电视4C<span>约有5件</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">电视32英寸<span>约有3件</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">笔记本pro<span>约有5件</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">空气净化器<span>约有11件</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">净水器<span>约有8件</span></a>
+                        </li>
+                    </ul>
+                    <input
+                          type="submit"
+                          class="search-btn iconfont"
+                          value="&#xe65a;"
+                    />
                     <div class="search-hot-words">
                         <a href="#">小米6X</a>
                         <a href="#">红米S2</a>

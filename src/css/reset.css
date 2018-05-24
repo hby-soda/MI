@@ -90,7 +90,6 @@ audio:not([controls]) {
 
 html {
   font-family: sans-serif;
-
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: none;
@@ -118,9 +117,6 @@ a:hover,
 a:focus {
   outline: 0;
 }
-a:hover {
-  color: #ff6700;
-}
 /*reset end*/
 
 /*-----------common css-----------*/
@@ -142,8 +138,4 @@ a:hover {
   height: 0;
   font-size: 0;
   content: '';
-}
-/*公共宽度*/
-.commonWidth {
-    width: 1226px
 }
