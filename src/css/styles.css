@@ -395,9 +395,9 @@ body {
 }
 .banner-pager a {
     float: left;
+    margin: 0 5px;
     width: 10px;
     height: 10px;
-    margin: 0 5px;
     border: 2px solid #757575;
     border-radius: 50%;
     background: rgba(0,0,0,.4);
