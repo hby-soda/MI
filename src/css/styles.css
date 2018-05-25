@@ -245,10 +245,13 @@ body {
 .site-header .search-hot-lists {
     display: none;
     position: relative;
+    left: 0;
     top: 50px;
-    border: 1px solid #ff6700;
-    border-top: none;
+    z-index: 20;
     width: 245px;
+    border: 1px solid #ff6700;
+    border-top: 0;
+    background: #fff;
 }
 .site-header .search-hot-lists .list-item {
     height: 30px;
@@ -259,5 +262,156 @@ body {
 .site-header .search-hot-lists .list-item span{
     float: right;
 }
-
+.navinfo {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: -56px;
+    z-index: 21;
+    font-size: 14px;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+}
+.navinfo-border {
+    display: none;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 4px 2px 6px #e0e0e0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 242px;
+}
+.navinfo .navinfo-item {
+    float: left;
+    width: 203px;
+}
+.navinfo-list {
+    display: none;
+}
+.navinfo .navinfo-title {
+    border: 1px solid #ff6700;
+    width: 60px;
+    margin: -1px auto 0 auto;
+    text-align: center;
+    color: #ff6700;
+}
+.navinfo .navinfo-title-none {
+    height: 23px;
+    background-color: #ffffff;
+}
+.navinfo-item img{
+    display: inline-block;
+    width: 160px;
+    height: 110px;
+    margin: 15px 22px;
+}
+.navinfo-item .navinfo-det {
+    color: #757575;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.navinfo-item .navinfo-det span {
+    color: #ff6700;
+}
+.line {
+    float: left;
+    width: 1px;
+    height: 110px;
+    margin: 36px 0;
+    background-color: #e0e0e0;
+}
 /*-------header-------*/
+
+/*-------banner-------*/
+
+.site-main {
+    position: relative;
+}
+.site-main .main-banner {
+    float: left;
+    overflow: hidden;
+    width: 1226px;
+    height: 460px;
+}
+.site-main .main-banner .banner-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+.main-banner .banner-item a {
+    display: block;
+}
+.main-banner .banner-item,
+.main-banner .banner-item a,
+.main-banner .banner-item img {
+    width: 1226px;
+    height: 460px;
+}
+.site-main .main-banner .banner-item-active {
+    display: block;
+}
+/*上下页按钮*/
+.main-banner .btn-pager {
+    position: absolute;
+    top: 195px;
+    z-index: 10;
+    width: 40px;
+    height: 70px;
+    text-align: center;
+}
+.main-banner .btn-pager i {
+    line-height: 70px;
+    font-size: 30px;
+    color: rgba(117, 117, 117, 0.5);
+}
+.main-banner .btn-prev {
+    left:234px;
+}
+.main-banner .btn-next {
+    right: 0;
+}
+.main-banner .btn-pager:hover {
+    background: rgba(0,0,0,.3);
+}
+.main-banner .btn-pager i:hover {
+    color: #ffffff;
+}
+/*banner-pager*/
+.main-banner .banner-pager {
+    position: absolute;
+    right: 30px;
+    bottom: -440px;
+    left: auto;
+    z-index: 30;
+    display: block;
+    width: 400px;
+    font-size: 0;
+    color: #666;
+    text-align: right;
+}
+.banner-pager li {
+    display: inline-block;
+}
+.banner-pager a {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border: 2px solid #757575;
+    border-radius: 50%;
+    background: rgba(0,0,0,.4);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.banner-pager a:hover,
+.banner-pager .active a{
+    border-color: #757575;
+    border-color: rgba(0,0,0,.4);
+    background: #fff;
+    background: rgba(255,255,255,.4);
+}
+/*-------banner-------*/
+
+
+
