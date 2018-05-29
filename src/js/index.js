@@ -47,41 +47,61 @@ $(".nav-item ").mouseleave(
 //------经过导航展示下拉菜单end------
 
 //------搜索框获得焦点、失去焦点------
-$(".search-text").focusin( function () {
-    $(".search-hot-words").hide();//隐藏search-hot-words
-    $(".search-form").find("input").css({
-        borderColor: '#ff6700'
-    });
-    $(".search-hot-lists").show();//加载下拉列表
-});
-
-$(".search-text").focusout( function () {
-    $(".search-hot-words").show();//显示search-hot-words
-    $(".search-form").find("input").css({
-        borderColor:'#e0e0e0'
-    });
-    $(".search-hot-lists").hide();//隐藏下拉列表
-});
-//------搜索框获得焦点、失去焦点end------
-
-// ------鼠标经过搜索按钮------
-$(".search-btn").hover(
-    function handlerIn() {
-        $(".search-btn").css({
-            borderColor:'#ff6700',
-            backgroundColor:'#ff6700',
-            color:'#fff'
-        })
+var search = {
+    init:function () {
+        this.listen()
     },
-    function handlerOut() {
-        $(".search-btn").css({
-            borderColor:'#e0e0e0',
-            backgroundColor:'#fff',
-            color:'#616161'
-        })
+    listen: function () {
+        hoveron();
+        $(".search-text").focusin( function () {
+            $(".search-hot-words").hide();//隐藏search-hot-words
+            $(".search-form").find("input").css({
+                borderColor: '#ff6700'
+            });
+            $(".search-hot-lists").show();//加载下拉列表
+            hoverhide();
+        });
+        $(".search-text").focusout( function () {
+            $(".search-hot-words").show();//显示search-hot-words
+            $(".search-form").find("input").css({
+                borderColor:'#e0e0e0'
+            });
+            $(".search-hot-lists").hide();//隐藏下拉列表
+            hoveron();
+        });
+        function hoveron() {
+            $(".search-form").hover(
+                function () {
+                    $(".search-form").find("input").css({
+                        borderColor: '#b0b0b0'
+                    });
+                },
+                function () {
+                    $(".search-form").find("input").css({
+                        borderColor: '#e0e0e0'
+                    });
+                },
+            )
+        };
+        function hoverhide() {
+            $(".search-form").hover(
+                function () {
+                    $(".search-form").find("input").css({
+                        borderColor: '#ff6700'
+                    });
+                },
+                function () {
+                    $(".search-form").find("input").css({
+                        borderColor: '#ff6700'
+                    });
+                },
+            )
+        };
     }
-);
-// ------鼠标经过搜索按钮end------
+};
+search.init();
+// //------搜索框获得焦点、失去焦点end------
+
 
 //----------轮播图----------
 var banner = {
@@ -145,3 +165,104 @@ var swiper = {
 //初始化轮播插件
 swiper.init();
 //----------轮播图end----------
+
+//----------小米闪购彩虹列表切换----------
+$(function () {
+    $(".more .control-prev").click(function () {
+            $(".xm-flashPurchase-list").css({
+                marginLeft:'0px'
+            });
+            $(this).addClass("control-disabled");
+            $(this).removeClass("active");
+            $(".more .control-next").addClass("active");
+            $(".more .control-next").removeClass("control-disabled")
+        }
+    );
+    $(".more .control-next").click(function () {
+            $(".xm-flashPurchase-list").css({
+                marginLeft:'-496px'
+            });
+            $(this).addClass("control-disabled");
+            $(this).removeClass("active");
+            $(".more .control-prev").addClass("active");
+            $(".more .control-prev").removeClass("control-disabled")
+        }
+    )
+})
+//----------小米闪购彩虹列表切换end----------
+//----------回到顶部----------
+$(function () {
+    $("#bar-s-totop").hide();
+    $(function () {
+        $(window).scroll(function () {
+            if ( $(window).scrollTop() > $(window).height() ){
+                $("#bar-s-totop").fadeIn(300);
+            }
+            else {$("#bar-s-totop").fadeOut(200);}
+        })
+    });
+    $("#bar-s-totop").click(function () {
+        $('body,html').animate({scrollTop:0},0);
+        return flase;
+    })
+});
+//----------回到顶部end----------
+//----------产品列表切换end----------
+$(function () {
+    $("#homeelec .tab-list li").hover(
+        function () {
+            var ind = $(this).index();
+            $("#homeelec .tab-list li.tab-active").removeClass("tab-active");
+            $(this).addClass("tab-active");
+            $("#homeelec .row .span16 ul").addClass("hide");
+            $("#homeelec .row .span16 ul").eq(ind).removeClass("hide")
+        },
+        function () {
+        }
+    );
+    $("#smart .tab-list li").hover(
+        function () {
+            var ind = $(this).index();
+            $("#smart .tab-list li.tab-active").removeClass("tab-active");
+            $(this).addClass("tab-active");
+            $("#smart .row .span16 ul").addClass("hide");
+            $("#smart .row .span16 ul").eq(ind).removeClass("hide")
+        },
+        function () {
+        }
+    );
+    $("#math .tab-list li").hover(
+        function () {
+            var ind = $(this).index();
+            $("#math .tab-list li.tab-active").removeClass("tab-active");
+            $(this).addClass("tab-active");
+            $("#math .row .span16 ul").addClass("hide");
+            $("#math .row .span16 ul").eq(ind).removeClass("hide")
+        },
+        function () {
+        }
+    );
+    $("#accessories .tab-list li").hover(
+        function () {
+            var ind = $(this).index();
+            $("#accessories .tab-list li.tab-active").removeClass("tab-active");
+            $(this).addClass("tab-active");
+            $("#accessories .row .span16 ul").addClass("hide");
+            $("#accessories .row .span16 ul").eq(ind).removeClass("hide")
+        },
+        function () {
+        }
+    );
+    $("#around .tab-list li").hover(
+        function () {
+            var ind = $(this).index();
+            $("#around .tab-list li.tab-active").removeClass("tab-active");
+            $(this).addClass("tab-active");
+            $("#around .row .span16 ul").addClass("hide");
+            $("#around .row .span16 ul").eq(ind).removeClass("hide")
+        },
+        function () {
+        }
+    )
+});
+//----------产品列表切换end----------
